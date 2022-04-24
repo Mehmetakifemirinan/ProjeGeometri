@@ -2,15 +2,16 @@ package geometrihesaplama;
 
 public class Kare extends Sekil{
 
-    public Kare(double uzunKenar, double kisaKenar){
-        super(uzunKenar, kisaKenar);
+    public Kare(double kenar){
+
+        super(kenar);
     }
 
     @Override
     public String toString() {
         return "Kare " +
-                "Kenar = " + uzunKenar +
-                  " Kare cevre hesaplama = "+ cevreHesaplama()+ "Kare alan hesaplama =" + alanHesaplama();
+                "Kenar = " +kenar +
+                  " Kare cevre hesaplama = "+ kareCevreHesaplama()+ "Kare alan hesaplama =" + kareAlanHesaplama();
 
     }
 }

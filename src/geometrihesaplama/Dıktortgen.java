@@ -3,25 +3,25 @@ package geometrihesaplama;
 public class Dıktortgen extends Sekil {
 
     public Dıktortgen(double uzunKenar,double kisaKenar){
-        super(uzunKenar, kisaKenar);
+        super(uzunKenar, kisaKenar); //CONS.ILK SATIRINDA OLACAK.VERIABLE CAGIRMAK ICIN.DIREK PARENTTA GIDER.
     }
 
 
-    public double cevreHesaplama() {
+    public double diktortgenCevreHesaplama() {
 
-        return super.cevreHesaplama();
+        return super.diktorgenCevreHesaplama();
     }
 
-    public double alanHesaplama() {
+    public double diktorgenAlanHesaplama() {
 
-        return super.alanHesaplama();
+        return super.diktortgenAlanHesaplama();
     }
 
     @Override
     public String toString() {
         return "Diktorgen " +
                 "uzunKenar = " + uzunKenar +
-                ", kisaKenar = " + kisaKenar + "Diktorgen cevre hesaplama = " + cevreHesaplama()+ "Diktorgen alan hesaplama = " + alanHesaplama();
+                ", kisaKenar = " + kisaKenar + "Diktorgen cevre hesaplama = " + diktorgenAlanHesaplama()+ "Diktorgen alan hesaplama = " + diktorgenCevreHesaplama();
 
     }
 }

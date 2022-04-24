@@ -2,24 +2,26 @@ package geometrihesaplama;
 
 public class Cember extends Sekil {
 
-    public Cember(double yariCap){
+    public Cember(double yariCap,double pi){
+
         super(yariCap);
+        super(pi);
+    }
+    public double cemberCevre() {
+
+        return super.cemberCevre();
     }
 
-    public double cevreHesaplama() {
 
-        return yariCap*2*3.14;
-    }
+    public double cmberCevre() {
 
-    public double alanHesaplama() {
-
-        return yariCap*yariCap*3.14;
+        return super.cemberAlan();
     }
 
     @Override
     public String toString() {
         return
-                "yariCap = " + yariCap + "cember cevre = "+ cevreHesaplama()+"cember alan = "+ alanHesaplama();
+                "yariCap = " + yariCap + "cember cevre = "+ cemberAlan()+"cember alan = "+ cemberCevre()+"cemberCevre="+cemberCevre();
 
     }
 }

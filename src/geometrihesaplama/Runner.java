@@ -11,14 +11,14 @@ public class Runner {
 
 
         Kare kare=new Kare(10,10);
-        kare.cevreHesaplama();
-        kare.alanHesaplama();
+        kare.kareCevreHesaplama();
+        kare.kareAlanHesaplama();
 
         System.out.println(kare);
 
         Dıktortgen dikdortgen = new Dıktortgen(10,5);
-        dikdortgen.cevreHesaplama();
-        dikdortgen.alanHesaplama();
+        dikdortgen.diktortgenCevreHesaplama();
+        dikdortgen.diktorgenAlanHesaplama();
 
         System.out.println(dikdortgen);
     }
